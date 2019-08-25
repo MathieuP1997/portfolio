@@ -1,0 +1,198 @@
+.menu {
+	position: fixed;
+	top: 3rem;
+	right: 3rem;
+}
+nav {
+	background-color: #EAAFCB;
+	width: 25vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+}
+.dark nav{
+	background-color: #381F1F;
+}
+.dark nav a{
+	color: white;
+}
+nav.onzichtbaar {
+	display: none;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 2.25rem;
+	margin-bottom: 3rem;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	color: black;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 4rem;
+	font-family: 'Quicksand', sans-serif;
+}
+.dark h1, .dark h2, .dark h3, .dark p {
+	color: white;
+}
+.dark div{
+	background-color: #292525;
+}
+body {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.dark {
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(103,56,56,1) 100%);
+}
+h2{
+	font-size: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+.aboutMe{
+	height: 30rem;
+	width: 50rem;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5%;
+}
+.aboutMe p{
+	font-size: 1.5rem;
+	font-family: 'Quicksand', sans-serif;
+	padding: 1rem;
+}
+.werken{
+	height: 40rem;
+	width: 50rem;
+	background-color: white;
+	border-radius: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer p{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Quicksand', sans-serif;
+	padding: 1rem;
+}
+.werken a{
+	display: inline-block;
+}
+.werk1:hover, .werk2:hover, .werk3:hover, .werk4:hover, .werk5:hover,.werk6:hover{
+	transform: scale(1.1);
+}
+.werk1{
+	background-image: url("lionpuppy.jpg");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werk2{
+	background-image: url("skull.jpg");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werk3{
+	background-image: url("vogel drawing.jpg");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werk4{
+	background-image: url("roos.jpg");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werk5{
+	background-image: url("konijn.jpg");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werk6{
+	background-image: url("logo.png");
+	height: 13rem;
+	width: 13rem;
+	background-size: cover;
+	margin: 1rem;
+}
+.werken p{
+	display: inline-block;
+}
+.werken h2{
+	height: 13rem;
+	width: 13rem;
+}
+.werken div:hover h2{
+	background-color: rgba(173,184,225,0.3)
+}
+h3{
+	font-size: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+.contact{
+	height: 15rem;
+	width: 50rem;
+	background-color: white;
+	border-radius: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact p{
+	font-size: 1.5rem;
+	font-family: 'Quicksand', sans-serif;
+	padding: 1rem;
+}
+@supports (grid-area: auto) {
+	body{
+		max-width: none;
+	}
+}
+@media (min-width: 1100px) {
+	main{
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: 0.5fr 1fr;
+		grid-template-rows: 0.2fr 0.3fr 0.5fr;
+	}
+	h1{
+		grid-column: 1/3;
+		grid-row: 1;
+	}
+	.aboutMe{
+		grid-row: 2;
+		grid-column: 1/2;
+		margin-left: 10rem;
+		width: 30vw;
+		height: 40rem;
+	}
+	.werk{
+		grid-row: 2/4;
+		grid-column: 2/3;
+	}
+	.contact{
+		width: 50vw;
+		grid-column: 1/3;
+	}
+	.contact p{
+		display: inline;
+	}
+}

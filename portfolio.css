@@ -1,0 +1,129 @@
+.menu {
+	position: fixed;
+	top: 3rem;
+	right: 3rem;
+}
+nav {
+	background-color: #EAAFCB;
+	width: 25vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+}
+.dark nav{
+	background-color: #381F1F;
+}
+.dark nav a{
+	color: white;
+}
+nav.onzichtbaar {
+	display: none;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 2.25rem;
+	margin-bottom: 3rem;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 4rem;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 2rem;
+}
+.dark h1, .dark h2, .dark h3, .dark p {
+	color: white;
+}
+.dark div{
+	background-color: #292525;
+}
+body {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+body.dark {
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(103,56,56,1) 100%);
+}
+.werk1{
+	background-image: url("skull.jpg");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.werk2{
+	background-image: url("lionpuppy.jpg");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.werk3{
+	background-image: url("roos.jpg");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.werk4{
+	background-image: url("logo.png");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.werk5{
+	background-image: url("vogel drawing.jpg");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.werk6{
+	background-image: url("konijn.jpg");
+	background-size: cover;
+	width: 50rem;
+	height: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+footer p{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Quicksand', sans-serif;
+	padding: 1rem;
+}
+@supports (grid-area: auto) {
+body{
+	max-width: none;
+}
+}
+@media (min-width: 60rem) {
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+h1{
+	grid-row: 1;
+	grid-column: 1/3;
+}
+}
